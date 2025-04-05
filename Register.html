@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h2>Register</h2>
+    <p>Let's Get Started<br>Create an account</p>
+
+    <form id="registerForm">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Ex. Earl J. Smiley" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+      <div class="divider"><span>OR</span></div>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+977 Enter Mobile Number" pattern="\+977[0-9]{9}" required>
+
+      <button type="submit" class="register-btn">Register</button>
+    </form>
+
+    <p class="login-link">Already have an account? <a href="#">Sign up</a></p>
+  </div>
+
+  <script>
+    document.getElementById("registerForm").addEventListener("submit", function(event) {
+      var fullname = document.getElementById("fullname").value.trim();
+      var email = document.getElementById("email").value.trim();
+      var phone = document.getElementById("phone").value.trim();
+      var phonePattern = /^\+977[0-9]{9}$/;
+
+      if (fullname === "" || email === "" || phone === "") {
+          alert("Please fill out all fields.");
+          event.preventDefault();
+          return;
+      }
+
+      if (!phonePattern.test(phone)) {
+          alert("Phone number must be in the format: +977XXXXXXXXX (9 digits after +977)");
+          event.preventDefault();
+          return;
+      }
+
+      alert("Registration successful!");
+    });
+  </script>
+</body>
+</html>

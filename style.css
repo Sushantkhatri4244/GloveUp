@@ -1,0 +1,208 @@
+/* Register CSS */
+/* Reset & General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Centering the form */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Form container */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Title */
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+p {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Divider (for OR section) */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+}
+
+.divider span {
+    margin: 0 10px;
+    font-size: 14px;
+    color: gray;
+}
+
+/* Register Button */
+.register-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-btn:hover {
+    background-color: #e69500;
+}
+
+/* Login Link */
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #FFA500;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*  Login CSS */
+
+/* Password wrapper (to place the eye icon inside the input field) */
+.password-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/* Eye icon for toggling password */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Forgot password link alignment */
+.forgot-password {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+
+/* Verify CSS*/
+
+/* 1. Back Arrow Link (Optional) */
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+  }
+  
+  /* 2. Verification Container Adjustments */
+  .verification-container {
+    position: relative;
+    text-align: center;
+    width: 350px; /* same as register container for consistency */
+  }
+  
+  /* 3. Code Inputs Wrapper */
+  .code-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  /* 4. Individual Code Input Fields */
+  .code-input {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* 5. Timer Style */
+  .timer {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* 6. Verification Info Text */
+  .verification-info {
+    color: #555;
+    font-size: 14px;
+    margin: 15px 0;
+  }
+  
+  /* 7. Resend Link */
+  .resend-link {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .resend-link a {
+    color: #FFA500;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .resend-link a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+  /* LandingPage CSS */
+
+ 
