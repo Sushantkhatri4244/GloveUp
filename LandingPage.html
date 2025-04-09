@@ -3,383 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boxing Training Center</title>
-    <style>
-        /* * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        
-        body {
-            background-color: #f5f5f5;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        /* Header Styles */
-        header {
-            background-color: #e0e0e0;
-            padding: 10px 0;
-        }
-        
-        .logo {
-            width: 30px;
-            height: 30px;
-            background-color: #007bff;
-            float: left;
-            margin-left: 10px;
-        }
-        
-        nav {
-            text-align: center;
-        }
-        
-        nav ul {
-            list-style: none;
-            display: inline-block;
-        }
-        
-        nav ul li {
-            display: inline-block;
-            margin: 0 5px;
-        }
-        
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-            background-color: #ccc;
-            padding: 5px 10px;
-            border-radius: 3px;
-            font-size: 14px;
-        }
-        
-        .auth-links {
-            float: right;
-            margin-right: 10px;
-        }
-        
-        .auth-links a {
-            text-decoration: none;
-            color: #333;
-            background-color: #ccc;
-            padding: 5px 10px;
-            border-radius: 3px;
-            margin-left: 5px;
-            font-size: 14px;
-        }
-        
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            padding: 30px 0;
-            background-color: #e0e0e0;
-        }
-        
-        .hero h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-        
-        /* About Section */
-        .about {
-            display: flex;
-            padding: 20px;
-            background-color: #fff;
-            border-top: 5px solid #cc0000;
-        }
-        
-        .about-img {
-            width: 150px;
-            height: 180px;
-            background-color: #cc0000;
-            margin-right: 20px;
-        }
-        
-        .about-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .about-content {
-            flex: 1;
-        }
-        
-        .about-content h2 {
-            color: #cc0000;
-            margin-bottom: 10px;
-        }
-        
-        .about-content h3 {
-            margin-bottom: 15px;
-        }
-        
-        .about-content p {
-            font-size: 14px;
-            line-height: 1.5;
-            margin-bottom: 10px;
-        }
-        
-        /* Schedule Section */
-        .schedule {
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        
-        .days {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
-        
-        .day {
-            flex: 1;
-            text-align: center;
-            padding: 10px;
-            background-color: #e0e0e0;
-            margin: 0 2px;
-            font-size: 14px;
-        }
-        
-        .schedule-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        
-        .schedule-item {
-            width: calc(33.33% - 10px);
-            background-color: #e0e0e0;
-            padding: 10px;
-            min-height: 120px;
-        }
-        
-        .time {
-            font-size: 12px;
-            color: #666;
-        }
-        
-        .class-name {
-            color: #cc0000;
-            margin: 5px 0;
-            font-size: 14px;
-        }
-        
-        .trainer {
-            font-size: 12px;
-            color: #666;
-        }
-        
-        /* Team Section */
-        .team {
-            padding: 20px;
-            background-color: #fff;
-        }
-        
-        .team h2 {
-            color: #cc0000;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-        
-        .team h3 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        
-        .trainer-card {
-            width: 200px;
-            margin: 0 auto;
-        }
-        
-        .trainer-img {
-            width: 100%;
-            height: 180px;
-            background-color: #e0e0e0;
-            margin-bottom: 10px;
-        }
-        
-        .trainer-name {
-            text-align: center;
-            color: #cc0000;
-            font-size: 14px;
-        }
-        
-        .trainer-title {
-            text-align: center;
-            font-size: 12px;
-        }
-        
-        /* Footer */
-        footer {
-            padding: 20px;
-            background-color: #fff;
-            margin-top: 20px;
-        }
-        
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .contact h4, .location h4 {
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
-        
-        .contact p, .location p {
-            font-size: 12px;
-            margin-bottom: 5px;
-        }
-        
-        .social-links {
-            margin-top: 10px;
-        }
-        
-        .social-links a {
-            margin-right: 10px;
-            font-size: 18px;
-            color: #333;
-        }
-        
-        .copyright {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 12px;
-            color: #666;
-        } */
-    </style>
+    <title>GloveUp - Boxing Training Center</title>
+    <link rel="stylesheet" href="LandingPage.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo"></div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Classes</a></li>
-                    <li><a href="#">Schedule</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Register</a></li>
-                </ul>
-            </nav>
-            <!-- <div class="auth-links">
-                <a href="#">Login</a>
-                <a href="#">Register</a>
-            </div> -->
+    <nav class="navbar">
+        <div class="logo">GloveUp</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Classes</a></li>
+            <li><a href="#">Athlete</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Sign Up</button>
         </div>
+    </nav>
+
+    <header class="header">
+        <h1>Boxing Training Center</h1>
+        <p>Learn Boxing in Nepal</p>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Boxing Training Center</h2>
-            <h1>Learn Boxing in Nepal</h1>
+    <section class="about-section">
+        <div class="about-image">
+            <img src="/api/placeholder/300/400" alt="Boxer in gloves">
+        </div>
+        <div class="about-content">
+            <h2>About us</h2>
+            <h3>Welcome to GloveUp</h3>
+            <p>"Welcome to GloveUp, where warriors of all levels step in, train hard, and rise stronger. Whether you're a beginner or a seasoned fighter, every punch brings you closer to greatness. Lace up, step in, and let’s fight for it!</p>
+            <p>GloveUp was founded with a passion for boxing and a commitment to discipline, 
+                respect, and growth. In a world where talent often goes unrecognized and
+                 dedication is overlooked, we provide a space where every fighter is valued. 
+                Whether you're a beginner or a rising champion, GloveUp is where you train, 
+                fight, and earn respect—because here, your journey matters.</p>
         </div>
     </section>
 
-    <section class="about">
-        <div class="container">
-            <div class="about-img">
-                <img src="/api/placeholder/150/180" alt="Boxer">
-            </div>
-            <div class="about-content">
-                <h2>About us</h2>
-                <h3>Welcome to Glove Up!</h3>
-                <p>"Welcome to Glove Up, where warriors of all levels step in to train hard, and rise stronger. Whether you're a beginner or a professional fighter, we're proud when you chose us to progress, I say, step in, and let's fight for it."</p>
-                <p>Glove Up was founded with a passion for boxing and a commitment to discipline. Whether you're training for fitness, competition, or self-improvement, our dedicated instructors create a gym where every fighter is valued. Whether you're a beginner or a rising champion, Glove Up is where you train, fight, and reach your full potential. Join us, you gladly, warrior.</p>
-            </div>
+    <section class="schedule-section">
+        <div class="schedule-days">
+            <div class="day">Sunday</div>
+            <div class="day">Monday</div>
+            <div class="day">Tuesday</div>
+            <div class="day">Wednesday</div>
+            <div class="day">Thursday</div>
+            <div class="day">Friday</div>
         </div>
-    </section>
 
-    <section class="schedule">
-        <div class="container">
-            <div class="days">
-                <div class="day">Sunday</div>
-                <div class="day">Monday</div>
-                <div class="day">Tuesday</div>
-                <div class="day">Wednesday</div>
-                <div class="day">Thursday</div>
-                <div class="day">Friday</div>
+        <div class="schedule-grid">
+            <div class="schedule-card">
+                <div class="schedule-time">6:00AM - 7:00AM, 4:00PM - 5:00PM</div>
+                <div class="schedule-class">Beginner</div>
+                <div class="schedule-trainer">Sushant Khatri</div>
             </div>
-            
-            <div class="schedule-grid">
-                <div class="schedule-item">
-                    <div class="time">6:00AM - 7:00AM | 4:00PM - 5:00PM</div>
-                    <div class="class-name">Boxing</div>
-                    <div class="trainer">Sushant Khatri</div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time">8:00AM - 9:00AM | 4:00PM - 5:00PM</div>
-                    <div class="class-name">Boxing</div>
-                    <div class="trainer">Sushant Khatri</div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time">6:00AM - 7:00AM | 4:00PM - 5:00PM</div>
-                    <div class="class-name">Boxing</div>
-                    <div class="trainer">Sushant Khatri</div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time">6:00AM - 7:00AM | 4:00PM - 5:00PM</div>
-                    <div class="class-name">Boxing</div>
-                    <div class="trainer">Sushant Khatri</div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time">7:00AM - 8:00AM | 5:00PM - 6:00PM</div>
-                    <div class="class-name">Boxing</div>
-                    <div class="trainer">Sushant Khatri</div>
-                </div>
-                <div class="schedule-item">
-                    <div class="time">6:00AM - 7:00AM | 5:00PM - 6:00PM</div>
-                    <div class="class-name">Boxing</div>
-                    <div class="trainer">Sushant Khatri</div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="team">
-        <div class="container">
-            <h2>The Team</h2>
-            <h3>Expert Trainers</h3>
-            
-            <div class="trainer-card">
-                <div class="trainer-img"></div>
-                <div class="trainer-name">Sushant Khatri</div>
-                <div class="trainer-title">Boxing Coach</div>
+            <div class="schedule-card">
+                <div class="schedule-time">8:00AM - 9:00AM, 5:00PM - 6:00PM</div>
+                <div class="schedule-class">Intermediate</div>
+                <div class="schedule-trainer">Sushant Khatri</div>
+            </div>
+
+            <div class="schedule-card">
+                <div class="schedule-time">9:00AM - 10:00AM, 6:00PM - 7:00PM</div>
+                <div class="schedule-class">Advanced</div>
+                <div class="schedule-trainer">Sushant Khatri</div>
+            </div>
+
+            <div class="schedule-card">
+                <div class="schedule-time">6:00AM - 7:00AM, 5:00PM - 6:00PM</div>
+                <div class="schedule-class">Strength</div>
+                <div class="schedule-trainer">Sushant Khatri</div>
+            </div>
+
+            <div class="schedule-card">
+                <div class="schedule-time">8:00AM - 9:00AM, 5:00PM - 6:00PM</div>
+                <div class="schedule-class">Cardio</div>
+                <div class="schedule-trainer">Sushant Khatri</div>
+            </div>
+
+            <div class="schedule-card">
+                <div class="schedule-time">9:00AM - 10:00AM, 6:00PM - 7:00PM</div>
+                <div class="schedule-class">Elite</div>
+                <div class="schedule-trainer">Sushant Khatri</div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="contact">
-                    <h4>Connect With Us</h4>
-                    <p>Bishnudol,Lalitpur,Nepal</p>
-                    <p>gloveupboxing01@gmail.com</p>
-                    <p>+977 9818809717</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="location">
-                    <h4>Location</h4>
-                    <p>Map goes here</p>
-                </div>
+    <section class="team-section">
+        <h2>The Team</h2>
+        <h3>Expert Trainers</h3>
+        <div class="trainer-card">
+            <img src="/api/placeholder/300/200" alt="Trainer">
+            <div class="trainer-name">Sushant Khatri</div>
+            <div class="trainer-role">Boxing Coach</div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-section">
+            <h4>Connect With Us</h4>
+            <p>Bishnudol, Lalitpur, Nepal</p>
+            <p>gloveupboxingnp@gmail.com</p>
+            <p>+977-9818809717</p>
+            <div class="social-icons">
+                <a href="#">FB</a>
+                <a href="#">IG</a>
+                <a href="#">IN</a>
             </div>
-            <div class="copyright">
-                © Glove Up. All Rights Reserved.
-            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Location</h4>
+            <iframe 
+            src="https://maps.google.com/maps?q=27.639649,85.364320&z=15&output=embed" 
+                width="250" 
+                height="150" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
     </footer>
+
+    <div class="copyright">
+        © GloveUp.All Rights Reserved.
+    </div>
 </body>
 </html>
