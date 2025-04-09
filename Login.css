@@ -1,0 +1,162 @@
+                                                                               /*  LOGIN CSS */
+
+/* Password wrapper (to place the eye icon inside the input field) */
+.password-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/* Eye icon for toggling password */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Forgot password link alignment */
+.forgot-password {
+    text-align: right;
+    margin-bottom: 15px;
+}
+/* Make the body take full height and center content */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff; /* pure white */
+}
+
+
+/* Login/Register form container */
+.container {
+    width: 10cm; /* Fixed width in centimeters */
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90vw;
+    }
+}
+
+/* Optional: Clean input & button styles */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button.register-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+/* Verify CSS*/
+
+/* 1. Back Arrow Link (Optional) */
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+  }
+  
+  /* 2. Verification Container Adjustments */
+  /* Center the verification container */
+.verification-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 350px; /* Adjust width if needed */
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Ensure the body takes full height */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8; /* Light gray background */
+}
+
+  
+  /* 3. Code Inputs Wrapper */
+  .code-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  /* 4. Individual Code Input Fields */
+  .code-input {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* 5. Timer Style */
+  .timer {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* 6. Verification Info Text */
+  .verification-info {
+    color: #555;
+    font-size: 14px;
+    margin: 15px 0;
+  }
+  
+  /* 7. Resend Link */
+  .resend-link {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .resend-link a {
+    color: #FFA500;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .resend-link a:hover {
+    text-decoration: underline;
+  }

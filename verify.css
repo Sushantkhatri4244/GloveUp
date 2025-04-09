@@ -1,0 +1,66 @@
+/* Verify CSS*/
+
+/* 1. Back Arrow Link (Optional) */
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+  }
+  
+  /* 2. Verification Container Adjustments */
+  .verification-container {
+    position: relative;
+    text-align: center;
+    width: 350px; /* same as register container for consistency */
+  }
+  
+  /* 3. Code Inputs Wrapper */
+  .code-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  /* 4. Individual Code Input Fields */
+  .code-input {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* 5. Timer Style */
+  .timer {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* 6. Verification Info Text */
+  .verification-info {
+    color: #555;
+    font-size: 14px;
+    margin: 15px 0;
+  }
+  
+  /* 7. Resend Link */
+  .resend-link {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .resend-link a {
+    color: #FFA500;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .resend-link a:hover {
+    text-decoration: underline;
+  }

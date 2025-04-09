@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" href="Register.css" />
+  <style>
+    .error {
+      color: red;
+      font-size: 0.9em;
+      display: none;
+    }
+  </style>
+</head>
+
+
+<body class="register-page">
+
+  <div class="register-container">
+    <h2>Register</h2>
+    <p>Let's Get Started<br>Create an account</p>
+
+    <form id="registerForm">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Ex. Earl J. Smiley"  pattern="^[A-Za-z\s]+$" required>
+    
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+      <div class="divider"><span>OR</span></div>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+977 Enter Mobile Number" pattern="\+977[0-9]{10}" required>
+
+      <button type="submit" class="register-btn">Register</button>
+    </form>
+
+    <p class="login-link">Already have an account? <a href="Login.html">Sign in</a></p>
+  </div>
+
+  <script>
+    document.getElementById("registerForm").addEventListener("submit", function(event) {
+      var fullname = document.getElementById("fullname").value.trim();
+      var email = document.getElementById("email").value.trim();
+      var phone = document.getElementById("phone").value.trim();
+      var phonePattern = /^\+977[0-9]{10}$/; // This ensures exactly 10 digits after +977
+
+      // Full Name Validation: Only alphabets and spaces allowed, no numbers, special chars
+      var fullnamePattern = "^[A-Za-z\s]+$";
+
+      // Reset any previous errors
+      document.getElementById("fullnameError").style.display = "none";
+
+      if (fullname === "" || email === "" || phone === "") {
+          alert("Please fill out all fields.");
+          event.preventDefault();
+          return;
+      }
+
+      if (!phonePattern.test(phone)) {
+          alert("Phone number must be in the format: +977XXXXXXXXXX (10 digits after +977).");
+          event.preventDefault();
+          return;
+      }
+
+      alert("Registration successful!");
+    });
+  </script>
+</body>
+</html>
+
