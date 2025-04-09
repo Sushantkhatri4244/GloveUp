@@ -1,0 +1,192 @@
+/* Contact page specific styling */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    padding: 30px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact-heading {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.contact-heading h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-heading p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info h2, .contact-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #333;
+    position: relative;
+}
+
+.contact-info h2:after, .contact-form h2:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #ff9900;
+    bottom: -10px;
+    left: 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: #ff9900;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contact-text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.contact-text p {
+    color: #666;
+}
+
+.contact-social {
+    margin-top: 30px;
+}
+
+.contact-social h3 {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px; /* Increase icon size */
+    color: inherit; /* Remove the white color */
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff9900; /* Change hover effect */
+}
+
+/* Add brand colors */
+.social-icons a:nth-child(1) { color: #1877F2; } /* Facebook blue */
+.social-icons a:nth-child(2) { color: #E4405F; } /* Instagram gradient (simplified) */
+.social-icons a:nth-child(3) { color: #FF0000; } /* YouTube red */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button.submit-btn {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+}
+
+button.submit-btn:hover {
+    background-color: #e68a00;
+}
+
+.location-map {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #f8f8f8;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.location-map h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.location-map iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .contact-info {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}

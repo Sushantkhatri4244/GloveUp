@@ -234,3 +234,15 @@ body {
     font-size: 12px;
 }
 
+
+.social-icons a i {
+    font-size: 18px;
+    color: #333;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover i {
+    color: #ff9800;
+}
+
